@@ -23,7 +23,7 @@ jobs:
       
       - name: Создание простого buildozer.spec
         run: |
-          cat > buildozer.spec << 'EOF'
+          # cat > buildozer.spec << 'EOF'
           echo "=== buildozer.spec создан ==="
           cat buildozer.spec
       
