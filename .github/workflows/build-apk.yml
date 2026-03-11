@@ -21,11 +21,11 @@ jobs:
           echo "=== Проверка main.py ==="
           cat main.py || echo "main.py не найден"
       
-      - name: Создание простого buildozer.spec
-        run: |
+      # - name: Создание простого buildozer.spec
+        # run: |
           # cat > buildozer.spec << 'EOF'
-          echo "=== buildozer.spec создан ==="
-          cat buildozer.spec
+          # echo "=== buildozer.spec создан ==="
+          # cat buildozer.spec
       
       - name: Сборка APK
         run: |
