@@ -24,36 +24,36 @@ jobs:
       - name: Создание простого buildozer.spec
         run: |
           cat > buildozer.spec << 'EOF'
-[app]
-title = Telegram Proxy
-package.name = telegramproxy
-package.domain = org.example
-
-source.dir = .
-source.include_exts = py,png,jpg,kv,atxt
-
-version = 1.0
-
-requirements = python3,kivy
-
-orientation = portrait
-
-osx.python_version = 3
-osx.kivy_version = 2.1.0
-
-fullscreen = 0
-
-android.permissions = INTERNET
-android.api = 33
-android.minapi = 21
-android.ndk = 25b
-android.sdk = 33
-android.accept_sdk_license = True
-
-[buildozer]
-log_level = 2
-warn_on_root = 1
-EOF
+          [app]
+          title = Telegram Proxy
+          package.name = telegramproxy
+          package.domain = org.example
+          
+          source.dir = .
+          source.include_exts = py,png,jpg,kv,atxt
+          
+          version = 1.0
+          
+          requirements = python3,kivy
+          
+          orientation = portrait
+          
+          osx.python_version = 3
+          osx.kivy_version = 2.1.0
+          
+          fullscreen = 0
+          
+          android.permissions = INTERNET
+          android.api = 33
+          android.minapi = 21
+          android.ndk = 25b
+          android.sdk = 33
+          android.accept_sdk_license = True
+          
+          [buildozer]
+          log_level = 2
+          warn_on_root = 1
+          EOF
           
           echo "=== buildozer.spec создан ==="
           cat buildozer.spec
